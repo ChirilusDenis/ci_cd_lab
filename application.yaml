@@ -5,8 +5,11 @@ metadata:
   namespace: argocd
 spec:
   project: default
+  syncPolicy:
+    automated:
+      enabled: true
   source:
-    repoURL: https://github.com/<todo-add-your-github-username>/ci_cd_lab.git
+    repoURL: https://github.com/ChirilusDenis/ci_cd_lab.git
     targetRevision: HEAD
     path: manifests
   destination:
