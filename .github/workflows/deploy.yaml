@@ -54,7 +54,7 @@ jobs:
         run: go test ./...
 
     # TODO 02 - Make sure that the `test` job is run before `compile`
-    build:
+  build:
     # Specify the OS for the runner
     runs-on: ubuntu-latest
 
